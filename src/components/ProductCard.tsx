@@ -36,7 +36,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
     >
       <div className="aspect-square relative overflow-hidden">
         <img
-          src={`https://source.unsplash.com/${product.id < 5 ? 'photo-1581091226825-a6a2a5aee158' : 'photo-1486312338219-ce68d2c6f44d'}?w=800&q=80`}
+          src={product.image}
           alt={product.name}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           loading="lazy"
